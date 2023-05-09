@@ -20,3 +20,15 @@
 .imgAvatar{
     width: 3vh;
 }
+.infoBar{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+.infoBar>select{
+    font-size: 1.1em;
+    background-color: black;
+    border-radius: 5px;
+}

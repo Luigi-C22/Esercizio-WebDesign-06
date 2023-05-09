@@ -9,54 +9,66 @@
     <link rel="stylesheet" href="style.css">
     <title>Clone Netflix</title>
 </head>
-<body>
+<body data-bs-theme="dark">
     <!-- Navbar (bootstrap) -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logoNavbar" src="assets/imgs/Netflix_Logo_RGB.png" alt="Logo Netflix"> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">TV Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recently Added</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My List</a>
-              </li>  
-            </ul>
-            
-          </div>
-        </div>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                </li>  
+                </ul>
+            </div>
         
-        <!-- utente nella navbar -->
-        <div class="userContainer">
-            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </a>
-            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span>KIDS</span>
-            </a>
-            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-bell"></i>
-            </a>
-            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img  class="imgAvatar" src="assets/imgs/Netflix-avatar.png" alt="avatar">
-            </a>
+            <!-- utente nella navbar -->
+            <div class="userContainer">
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>KIDS</span>
+                </a>
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bell"></i>
+                </a>
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img  class="imgAvatar" src="assets/imgs/Netflix-avatar.png" alt="avatar">
+                </a>
+
+                <!-- Button che collassa la navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
-      </nav>
+    </nav>
     <!-- Info bar -->
- 
+    <div class="infoBar">
+        <h1>TV Shows</h1>
+        <select name="Genres" id="Genres">
+            <option value="Genres">Genres</option>
+            <option value="Action">Action</option>
+            <option value="Horror">Horror</option>
+            <option value="Romantic">Romantic</option>
+            <option value="Series">Series</option>
+        </select>
+
+    </div>
     <!-- Carousel -->
     
 
