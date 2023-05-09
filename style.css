@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logoNavbar{
+    width: 10vh;
+}
+
+.userContainer{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    }
+
+.imgAvatar{
+    width: 3vh;
+}
